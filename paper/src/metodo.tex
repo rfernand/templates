@@ -1,0 +1,64 @@
+Hoy en día existen muchas aplicaciones y recursos robustos para poder solucionar
+distintos problemas enfocados al estudio y análisis de 
+%plataformas robóticas.
+
+Para desarrollar este proyecto fue necesario detectar cuáles de estos recursos
+son los que permitirían
+%crear una Interfaz Gráfica de Usuario (GUI) que pueda ofrecerle
+%a los investigadores una alternativa que facilite su labor.
+
+Por tanto, fue una necesidad el realizar un estudio de 
+%las herramientas que otras interfaces
+%ofrecían \footnote{\emph{Descritas posteriormente en VI. Resultados, subsección A}}, cumpliendo así una
+%labor similar, tomando en cuenta que nuestro proyecto define como
+%usuario final a desarrolladores e investigadores interiorizados en el área de la robótica.
+
+Para poder obtener dicha información fue necesario 
+%dirigirnos al origen de la problemática y establecer
+%un trabajo en conjunto con las personas dedicadas al área de la robótica. En nuestro caso, la
+%investigación se ha realizado en conjunto con el Centro de Robótica de la UTFSM. Ésto 
+%ayudó a definir correctamente el enfoque que se tendría que dar al proyecto, tanto por el lado de
+%los requerimientos principales de nuestro proyecto, como de la interfaz que un investigador de esta área
+%espera encontrar para, finalmente, facilitar la realización de la investigación en las plataformas
+%robóticas.
+
+%PROPÓSITO: CONVENCER A UNA AUDIENCIA TÉCNICA QUE SE SABE CÓMO CONSTRUIR LA SOLUCIÓN.
+Es en base a este enfoque que, después de realizar una investigación sobre las diferentes herramientas,
+se decidió
+%para el proyecto utilizar el lenguaje de programación Python, por el entorno de trabajo
+%que nos ofrece, permitiéndonos generar soluciones rápidamente y ser un lenguaje multiparadigma fácilmente
+%extensible.
+%Además, posee bastantes facilidades para trabajar en la implementación de interfaces de éste tipo, ya que
+%contiene una gran cantidad de bibliotecas para el manejo de diferentes aspectos del proyecto, como la
+%comunicación serial (pySerial~\cite{PYSERIAL}),
+%creación de algoritmos, y comunicación con la interfaz gráfica (pyQt~\cite{PYQT}), la cual junto a bibliotecas
+%específicas, ofrece herramientas con un entorno para desarrollar Interfaces
+%Gráficas de Usuario (Qt Designer~\cite{QTDESIGNER}).
+
+Para 
+%las bibliotecas gráficas, se optó por utilizar QT, al ser de fácil implementación en conjunto con Python (pyQt) y por su gran portabilidad
+%entre diferentes sistemas operativos.
+Finalmente,
+%para todo lo que significa la configuración de las plataformas
+%robóticas, se utilizó XML, por ser un estándar para el intercambio de
+%información estructurada entre diferentes plataformas, además de poseer la ventaja
+%de ser extensible para poder modificar y usar sus datos sin mayores
+%complicaciones. De esta manera, se reduce la dificultad de aprendizaje y
+%facilita el trabajo para que personas externas puedan aportar al
+%desarrollo del proyecto.
+
+Para desarrollar el presente trabajo, se han escogido métodos 
+%ágiles, sobre todo en extreme programming~\cite{XP},
+%por los principios que la sustentan; \emph{simplicidad, comunicación, retroalimentación y coraje}\cite{xp-book}.
+
+Para complementar y corregir las deficiencias del presente proyecto,
+%se utiliza como sistema de seguimiento de desarrollo de software a
+%Trac~\cite{TRAC}, el cual integra una wiki, un repositorio GIT~\cite{GIT} y
+%herramientas para el seguimiento y control de tareas. Esto permitió un rápido
+%avance en las tareas del grupo, pues cada integrante podía estar al tanto de
+%las actividades de sus compañeros de equipo, sin necesidad de mantener
+%reuniones presenciales. Cabe mencionar que ésta metodología de trabajo
+%nos fue de fácil implementación, gracias a que cada uno de los miembros del
+%equipo se encontraban previamente familiarizados con las herramientas utilizadas, a que
+%las tareas a realizar eran fácilmente identificables y que comenzadas las
+%etapas de desarrollo no requerían de un gran trabajo en conjunto.

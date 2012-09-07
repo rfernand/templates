@@ -1,0 +1,70 @@
+\documentclass[letter, 10pt]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{color}
+
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{green}{rgb}{0,1,0}
+\definecolor{blue}{rgb}{0,0,1}
+\newcommand{\blue}{\textcolor{blue}}
+\newcommand{\red}{\textcolor{red}}
+\newcommand{\green}{\textcolor{green}}
+
+\title{Título}
+
+\author{Rodrigo G. Fernández Gaete\\\url{rfernand@csrg.cl}\\
+Computer Systems Research Group~\cite{CSRG}\\ Universidad Técnica Federico Santa
+María, Valparaíso, Chile}
+
+%\author{
+%\IEEEauthorblockN{
+%Rodrigo G. Fernández\IEEEauthorrefmark{1}
+%}
+%\IEEEauthorblockA{
+%\IEEEauthorrefmark{1}Computer Systems Research Group~\cite{CSRG}, Universidad Técnica Federico Santa María, Av. ~España~1680, Valparaíso, Chile
+%\IEEEauthorrefmark{2}Centro de Robótica~\cite{CR}, Universidad Técnica Federico Santa María, Av. ~España~1680, Valparaíso, Chile
+%}
+%}
+\begin{document}
+\bibliographystyle{plain}
+\pagestyle{empty}
+
+\maketitle\thispagestyle{empty}
+
+\begin{abstract}
+Este documento presenta
+%el avance y proceso de creación de una aplicación que permita desarrollar las
+%rutinas de control para diferentes tipos de plataformas robóticas, unificando los diferentes mecanismos de comunicación
+%con cada dispositivo en un solo lenguaje de programación, buscando simplificar la programación de las
+%plataformas robóticas y hacer más eficiente el trabajo del investigador.
+%Dentro de las consideraciones se encuentran: (a) la elección de un lenguaje estandarizado que posibilite un fácil
+%aprendizaje y permita realizar una amplia gama de tareas; (b) la estructura del software a desarrollar, y (c)
+%la perduración del mismo en el tiempo.
+%Tras haber considerado todos estos puntos, se estableció que nuestro software sería desarrollado en
+%Python, con una estructura modular y extensible utilizando archivos XML, y de código abierto.
+%Se presentan resultados parciales sobre el desarrollo del proyecto y del software.
+\end{abstract}
+
+\textbf{Palabras Clave:}  key1, key2, key3
+
+\section{Introducción}
+\label{sec:intro}
+\input{src/1-introduccion}
+
+\section{Estado del Arte}
+\label{sec:estado}
+\input{src/2-estado_arte}
+
+\section{Conclusiones}
+\label{sec:conclusiones}
+\input{src/conclusiones}
+
+
+\bibliography{article,paper,url}
+%\vfill \hfill CMF/GZN/JPI/EBG/RFG/DI/UTFSM/2010
+\end{document}

@@ -1,0 +1,134 @@
+El primer resultado
+%Del proyecto fue la revisión de funcionalidades indispensables que debe poseer una
+%Herramienta para el control de dispositivos complejos como los robots con variados grados de libertad, lo
+%Cual llevó al equipo de trabajo a hacer un estudio y diseño de la interfaz de manejo que facilite la interacción máquina –
+%Hombre.
+
+%\subsection{Análisis de las herramientas existentes}
+%\begin{itemize}
+%	\item Player~\cite{PLAYER}\\
+%		Es un servidor de red para control de robots. Este se ejecuta en el robot, y provee una interfaz hacia
+%		los sensores y otros dispositivos a través de una red IP. El programa cliente se comunica con Player a
+%		través de un socket TCP, leyendo la información de los sensores, escribiendo y configurando dispositivos
+%		en el proceso. Es el estándar de facto en la comunidad robótica de código abierto, y se ha desarrollado
+%		como un poderoso robot framework~\cite{wcam-5}.
+%		Soporta una gran variedad de hardware de robots, y al ser su arquitectura modular, hace fácil el agregar soporte
+%		a nuevos dispositivos, y posee una comunidad activa que contribuye con nuevos controladores.
+%		Entre las características que posee:
+%		\begin{itemize}
+%			\item Soporta virtualmente variados clientes a la vez.
+%			\item Los clientes puede conectarse y leer los datos de los sensores de variadas instancias de Player en cualquier robot.
+%			\item Posee dos herramientas, Stage~\cite{STAGE} y Gazebo~\cite{GAZEBO}, para realizar pruebas con robots virtuales en 2 dimensiones y 3 dimensiones, respectivamente.
+%			\item Es software libre licenciado bajo la GNU Public License.
+%		\end{itemize}
+%		
+%		Es bastante versátil y ofrece bastantes posibilidades para desarrollar el robot, pero está centrado al
+%		control y comunicación más que al entorno de desarrollo del investigador. A pesar de estar basado en el
+%		protocolo TCP para dar mayores libertades de trabajo y más simplicidad a la hora de programar, posee una
+%		instalación bastante compleja y poco portable.
+%
+%	\item Carmen~\cite{CARMEN}\\
+%		 	Carmen es una colección de software OpenSource para el control de robots móviles. Es un software modular
+%		diseñado para proveer navegación básica en elementos primitivos incluyendo: control de bases y sensores, logging, 
+%		evasión de obstáculos, localización, planes de rutas, y mapeo. La comunicación entre los procesos Carmen es manejada
+%		utilizando IPC (Inter process communication).
+%		Entre las características que posee:
+%		\begin{itemize}
+%			\item Software de control de robots modular.
+%			\item Utilización de plataforma IPC para comunicación entre procesos.
+%			\item Soporte de hardware robótico para diferentes plataformas.
+%			\item Monitor de procesos.
+%			\item Servidor centralizado de parámetros.
+%			\item Hecho en C, pero provee soporte para Java.
+%			\item Módulo de localización. 
+%			\item Simulador de robots y sensores.
+%			\item Módulo de planeación de ruta.
+%		\end{itemize}
+%		Lo que convierte a Carmen en una herramienta bastante completa, 
+%		en lo que se refiere a plataformas móviles.\\
+%
+%	\item YARP~\cite{yarp-paper}\\
+%		Es un conjunto de bibliotecas, protocolos y herramientas con la finalidad de mantener
+%módulos y dispositivos desacoplados, de la manera más limpia posible. Una situación que comúnmente se da
+%en el área de la robótica, es que la evolución de los proyectos termina debido a dependencias de
+%bibliotecas obsoletas, dispositivos de hardware poco comunes y reducción del personal humano a cargo, de
+%por sí ya mínimo. Yarp tiene la intención de establecer un software duradero y estable~\cite{wcam-2}, evitando generar
+%restricciones relacionadas con cambios de hardware específico, con la consecuente ventaja de concentrar
+%los esfuerzos en la organización de los dispositivos. Yarp es OpenSource~\cite{OPENSOURCE}, por lo
+%que posee la cualidad de ser escrito por investigadores para investigadores.\\
+%
+%Principales componentes de Yarp:
+%
+%\begin{itemize}
+%
+%\item libYARP\_OS: Interfaz para ser utilizado con el Sistema Operativo, permitiendo dar el correspondiente soporte para la comunicación de datos entre diferentes tareas en muchas máquinas, independiente del Sistema Operativo en el que se encuentre alojado.
+%\item libYARP\_sig: Realiza tareas comunes en el ámbito del procesamiento de señales, tanto audio
+%visuales como auditivas, con facilidad de uso con otras bibliotecas, como OpenCV~\cite{OPENCV}.
+%\item libYARP\_dev: Provee una interfaz común con dispositivos como cámaras, tableros de control, motores, etc.
+%\end{itemize}
+%
+%
+%\end{itemize}
+%
+%
+%\subsection{Primeras Versiones de $\mu$Bot Interface~\cite{ubot}}
+%
+%Hasta el momento, se ha logrado desarrollar una Interfaz Gráfica de Usuario (GUI) capaz de proveer
+%varias funcionalidades del sistema de control, dentro de las cuales se encuentran:
+%\begin{itemize}
+%	\item Wizard de configuración para configurar la plataforma robótica a utilizar.\\
+%		Provee la facilidad necesaria al momento de dar el primer paso, en el
+%		contexto de definir la plataforma robótica a utilizar. Permite establecer
+%		desde cosas sencillas como el identificador único que posee la configuración
+%		de dicha plataforma, hasta la selección del tipo de microcontrolador que
+%		posee, dando además la factibilidad de seleccionar los distintos dispositivos
+%		que posee la plataforma e indicar en que pin se encuentra conectado cada uno.
+%
+%	\item Visualización de los dispositivos configurados.\\
+%		Permite observar en una manera totalmente rápida y expedita, toda la
+%		información referente a los dispositivos configurados (previamente conectados
+%		a la plataforma robótica), desde el tipo o familia a la que pertenece cada
+%		dispositivo, en que pin se puede establecer conexión hacia él, hasta
+%		características propias de dicho dispositivo, como rangos de funcionalidad de
+%		motores. 
+%
+%	\item Consola Python.\\
+%		Debido a que toda la información interna de la plataforma robótica es
+%		accesible mediante la utilización de orientación a objetos, gracias a la
+%		implementación propia de nuestra interfaz, se cuenta con una consola Python,
+%		que permite aprovechar las ventajas anteriormente mencionadas, además de
+%		contar con toda la riqueza del lenguaje Python, permitiendo así brindarle al
+%		programador una capa de abstracción mucho más acorde a la de un investigador,
+%		evitando la comunicación a bajo nivel con las plataformas.
+%
+%	\item Editor Python.\\
+%		Debido a que se cuenta con la consola Python, es posible desarrollar
+%		todo el código que se estime conveniente en lenguaje Python, por lo que el
+%		editor provee una manera rápida y expedita para realizar ésto, teniendo al
+%		alcance ambas herramientas interactuando entre sí. 
+%
+%	\item Envío de instrucciones a la plataforma robótica por puerto serial/usb.\\
+%		El envío de instrucciones se facilita gracias a la orientación a
+%		objetos que se implementó, de este modo es posible acceder a las
+%		funcionalidades de cada dispositivo y a su vez, obtener la información de
+%		salida que éstos provean.
+%
+%	\item Rutinas predeterminadas.\\
+%		Para reducir la complejidad de los diversos movimientos que puede tener un
+%		robot, se piensa integrar a la interfaz la capacidad de generar rutinas de
+%		movimiento básicas para algunas plataformas robóticas para así disminuir
+%		tiempo utilizado en el desarrollo de aplicaciones o estudios relacionados con
+%		la robótica, sin dejar de lado la transparencia y simplicidad de la
+%		comunicación con el robot. 
+%
+%	\item Integración con proyecto GEAR.\\
+%		Todo lo anteriormente señalado, no sería posible si no se contara con el
+%		proyecto \cite{GEAR}, que provee en un nivel de abstracción mucho más alto,
+%		para poder realizar una interacción con distintas microcontroladores,
+%		y así poder contar con un ciclo completo, al momento de desarrollar
+%		rutinas de control entre nuestro proyecto y distintas plataformas robóticas.
+%		Actualmente, el proyecto GEAR permite la comunicación con tres
+%		microcontroladores; Arduino (ATmega328), Sanguino (ATmega644) y ArduinoMega), 
+%		los cuales son los que se han utilizado para las pruebas del software.
+%\end{itemize}
+%

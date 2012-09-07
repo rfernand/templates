@@ -1,0 +1,39 @@
+Recuerda que:
+        - el estado del arte no debe ser exhaustivo.
+        - debe ser un análisis crítico del trabajo existente. 
+        - el estado del arte debe presentar el tema que va a ser desarrollado.
+        - no debe porque estar organizado en orden cronológico.
+        - siempre hay que pensar que el que va a leer el trabajo no tiene
+          conocimientos sobre el tema.
+        - se deben sacar las debilidades del tema de investigación.
+        - todas las críticas y debilidades deben justificarse, especialmente de
+          forma constructiva.
+
+        - Ejemplos del problema
+        - soluciones que tenemos
+        - cómo se pueden resolver.
+
+    - las críticas de fortalezas y debilidades de un paper no deben superar las
+      10 lineas por paper.
+
+    - hacer un plan de 3 o 4 páginas con el detalle
+        - estado del arte
+        - metodologías
+        - desarrollo
+        - conclusiones...
+
+        poner una frase o linea desarrollando de que tratará el tema.
+        - cuales serán las soluciones existentes de las cuales hablaré.
+        - que método utilizaré para evaluarlas.
+        - siempre intente hacer un resumen de lo hablado.
+        - si existen benchmarks, hay que usarlos!
+        - hacer una tabla resumen con las evaluaciones de cada soluciones según
+          cada criterio. (SOLO EN TESIS)
+    
+    - tener cuidado con la calidad de las referencias del estado del arte.
+        -EN UN PAPER:
+            - no usar reportes técnicos u otros documentos no
+            publicados.
+            - no usar referencias que no estén en ingles.
+            - no usar papers obsoletos (>10 años), exceptuando a papers
+              'históricos' del tema.

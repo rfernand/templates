@@ -1,0 +1,63 @@
+Abstract
+    problema: orfenamiento
+    interesante: muchas aplicaciones; bd, computación científica
+    difícil: complejidad computacional => cantidad de datos que podemos ordenar.
+    propuesta: nuevo algoritmo de ordenamiento con complejidad O(n) 
+
+    keywords: algorithm, sorting, bounds, pancake
+
+Introducción
+    contexto -> ordenar datos (problema)
+    Ej: 4231 -> 1234
+
+    Problema interesante:
+        - muchas aplicaciones que necesitan ordenar
+            - BD
+            - Comp. Científica (estadística)
+            - IA/IO
+            - Comp. Gráfica
+              ...
+
+    Problema difícil
+        1- desafío -> ordenar una gran cantidad de datos.
+            - complejidad lo más baja posible.
+        2- eficiencia
+            - disminuir lo más posible el consumo de memoria.
+        => encontrar una relación entre ambos que los haga difíciles de obtener
+        en conjunto.
+        
+    Solución planteada.
+
+Formalización del Problema
+
+Solución Propuestas
+
+Pruebas y Resultados
+    * contexto de hardware
+    (ordenamiento, complejidad y poco uso de memoria (getrusage()))
+    - resultado teórico de la complejidad
+        pseudocodigo: a*n + b operaciones.
+        donde n = tamaño de los datos;
+    - resultado práctico variando n (un sólo parámetro).
+
+    - Análisis
+        gráfico -> si recta -> ok !-> con segmentos
+    - Conclusiones
+        Complejidad baja permite ordenar una gran cantidad de datos en un
+        tiempo corto X.
+
+    * especial: mostrar que ordena.
+        - varias prubeas con conjuntos + o menois desordenados.
+    * evaluación/comparación con lo existente.
+        
+Related Work
+    - estudio crítico de lo existente
+    - seleccionar los métodos existentes
+        - función de contexto
+            + de lo más conocidos.
+
+Conclusiones + Future Work
+    - resumen de las fortalezas del algoritmo
+    - el trabajo futuro puede ser:
+        - una debilidad existente
+        - adaptarlo a otro problema
